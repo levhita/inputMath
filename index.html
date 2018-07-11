@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inputMath Test Document</title>
+</head>
+<body>
+    <h1>InputMath</h1>
+    <p>You can attach the inputMath evaluator using:</p>
+    <pre>
+        $('.input-math').inputMath();
+    </pre>
+    <p>Then on every keyup it'll check for an enter and then evaluate the expression.</p>
+    <h2>Tests</h2>
+    <label for="first-active">First Active:</label>
+    <input class="input-math" id="first-active" type="text" value=""/>
+    <hr/>
+    <label for="non-active">Not Active:</label>
+    <input id="non-active" type="text" value=""/>
+    <hr>
+    <label for="second-active">Second Active:</label>
+    <input class="input-math" id="second-active" type="text" value=""/>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <script src="inputMath.js"></script>
+    <script>
+        $('.input-math').inputMath();
+    </script>
+</body>
+</html>
