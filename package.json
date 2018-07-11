@@ -2,15 +2,15 @@
   "name": "inputMath",
   "version": "1.0.0",
   "description": "jQuery plugin to evaluate the written expression on every Enter, like blender ",
-  "main": "app.js",
+  "main": "",
   "scripts": {
-    "test": "mocha inputMath.spec.js"
+    "test": "mocha tests/mathEval.spec.js"
   },
   "author": "",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/levhita/inputMath.git"
+    "type": "git",
+    "url": "https://github.com/levhita/inputMath.git"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
