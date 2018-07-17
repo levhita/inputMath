@@ -1,12 +1,12 @@
 {
-  "name": "inputMath",
+  "name": "input-math",
   "version": "1.0.0",
-  "description": "jQuery plugin to evaluate the written expression on every Enter, like blender ",
-  "main": "",
+  "description": "jQuery plugin to evaluate the written math expression on input[type=text] every Enter, Just like Blender or Gimp",
+  "main": "js/inputMath.js",
   "scripts": {
     "test": "mocha tests/mathEval.spec.js"
   },
-  "author": "",
+  "author": "Levhita <levhita@gmail.com",
   "license": "ISC",
   "repository": {
     "type": "git",
