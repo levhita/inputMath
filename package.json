@@ -1,6 +1,6 @@
 {
   "name": "input-math",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jQuery plugin to evaluate the written math expression on input[type=text] every Enter, Just like Blender or Gimp",
   "main": "js/inputMath.js",
   "scripts": {
