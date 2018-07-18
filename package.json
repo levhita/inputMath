@@ -4,7 +4,8 @@
   "description": "jQuery plugin to evaluate the written math expression on input[type=text] every Enter, Just like Blender or Gimp",
   "main": "js/inputMath.js",
   "scripts": {
-    "test": "mocha tests/mathEval.spec.js"
+    "test": "mocha tests/mathEval.spec.js",
+    "build": "node_modules/.bin/babel src --out-dir lib"
   },
   "author": "Levhita <levhita@gmail.com",
   "license": "ISC",
@@ -13,6 +14,11 @@
     "url": "https://github.com/levhita/inputMath.git"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "jquery": "^3.3.1",
     "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

@@ -1,5 +1,6 @@
-const assert = require('assert');
-const mathEval = require('../js/mathEval');
+const assert  = require('assert');
+global.jQuery  = require('jquery');
+const mathEval = require('../lib/mathEval');
 
 describe('mathEval()', () =>{
     it('Must return 4, when given 2+2', () => {
