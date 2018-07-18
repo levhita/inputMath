@@ -1,5 +1,5 @@
 const assert  = require('assert');
-import { mathEval } from "../lib/mathEval";
+const mathEval = require('../lib/inputMath');
 
 describe('mathEval()', () =>{
     it('Must return 4, when given 2+2', () => {
