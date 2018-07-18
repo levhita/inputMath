@@ -1,3 +1,5 @@
+import { mathEval } from "mathEval";
+
 /** Based on https://github.com/umdjs/umd/blob/master/templates/jqueryPlugin.js **/
 // Uses CommonJS, AMD or browser globals to create a jQuery plugin.
 (function (factory) {
@@ -28,7 +30,7 @@
     }
 }(function ($) {
     $.fn.inputMath = function() {
-        
+
         this.filter('input[type="text"]').each(function() {
             $(this).on('keyup',(event)=>{
                 var $target = $(event.target);
