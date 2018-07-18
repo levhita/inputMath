@@ -1,5 +1,9 @@
 
 if (typeof window =='undefined') {
+    /**
+    * boilerplate to allow the use of jQuery that needs a valid
+    * window and document in the test.
+    **/
     var jsdom = require('jsdom');
 
     const { JSDOM } = jsdom;
