@@ -22,22 +22,21 @@
         };
         
         $.fn.inputMath = function() {
-            
             this.filter('input[type="text"]').each(function() {
                 $(this).on('keyup',(event)=>{
                     var $target = $(event.target);
                     if (event.which == 13) {
-                        console.log("Evaluating:"+$target.val() );
+                        //console.log("Evaluating:"+$target.val() );
                         var new_value = "";
                         try {
                             new_value = $.fn.mathEval($target.val());
                         } catch(e) {
                             new_value = $target.val();
-                            console.log(e);
                         }
                         $target.val(new_value);
                     } else {
-                        console.log($target.val());
+                        //We don't change anything
+                        //console.log($target.val());
                     }
                 });
                 
@@ -58,5 +57,5 @@
         /** Loading for Browser **/
         loader(jQuery);
     }
-    
+
 })();
